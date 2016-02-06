@@ -1,0 +1,6 @@
+I need to understand how C++ handles their class declarations
+since its kind of odd and nothing like what Im used tooo...
+
+Interesting, but makes sense, very disjointed compared
+to Java and Python.
+
