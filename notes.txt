@@ -1,6 +1,12 @@
-I need to understand how C++ handles their class declarations
+ALL CODE WAS WRITTEN BY ME, with help of internet haha
+=========
+I need to understand how C++ handles their class declarations and basic types
 since its kind of odd and nothing like what Im used tooo...
 
 Interesting, but makes sense, very disjointed compared
 to Java and Python.
 
+Might check out Boost
+==========
+Going to work on stack implimentation test.
+==========
