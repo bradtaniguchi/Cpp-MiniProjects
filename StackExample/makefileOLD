@@ -1,0 +1,13 @@
+all: main
+
+main: mystack.o stackex.o BradHeaders.h
+	g++ -g mystack.o stackex.o -o main.exe`
+
+mystack.o: mystack.cpp
+	g++ -c mystack.cpp
+
+stackex.o: stackex.cpp
+	g++ -c stackex.cpp
+
+clean:
+	rm *.o main

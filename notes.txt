@@ -10,3 +10,6 @@ Might check out Boost
 ==========
 Going to work on stack implimentation test.
 ==========
+Make a FlipFlop experiment? I have an idea with arrays, FlipFlops to make
+a binary adder, be cool
+
