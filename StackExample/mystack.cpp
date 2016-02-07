@@ -16,9 +16,10 @@ class MyStack { //integer ONLY Stack
 };
 
 MyStack::MyStack(int mlength) { //length
-    static const int maxlength = mlength;
-    //int *myarray = new int[maxlength]; //initalize array
-    int myarray[maxlength]; //initalize array
+    maxlength = mlength;
+    const int constmaxlength = maxlength;
+    std::cout << maxlength << std::endl; 
+    int myarray[constmaxlength]; //initalize array
     topspot = 0;
 }
 int MyStack::pop() {
@@ -38,17 +39,18 @@ void MyStack::push(int x) {
     } else {
         std::cout << "TOPSPOT " << topspot << std::endl;
         std::cout << "X: " << x << std::endl;
-        myarray[topspot] = x; //add x into stop spot
+        //myarray[topspot] = x; //add x into stop spot
         //topspot++; //increase stack "up"
         std::cout << "TOPSPOT " << topspot << std::endl;
     }
 }
 void MyStack::printstack() {
-//    std::cout << "PRINTING STACK" << std::endl;
-//    std::cout << "MaxLength " << maxlength << std::endl;
-    for(int i = 0; i < this->maxlength; i++) {
+    std::cout << "PRINTING STACK" << std::endl;
+    std::cout << "MaxLength " << maxlength << std::endl;
+    for(int i = 0; i < maxlength; i++) {
         std::cout << this->myarray[i] << std::endl;
     }
+    std::cout << "END STACK" << std::endl;
 }
 
 
