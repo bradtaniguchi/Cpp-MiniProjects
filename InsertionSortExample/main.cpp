@@ -3,6 +3,7 @@
 //InsertionSort on Array
 #include <iostream>
 //#include <headers.h>
+#include "../masterheaders.h" //for Counter and printarray
 
 int main() {
     using namespace std;
@@ -12,6 +13,6 @@ int main() {
     int* myarrayPtr = myarray;
 
     cout << "---PostSort---" << endl;
-
+    printarray(int)
     return 0;
 }
