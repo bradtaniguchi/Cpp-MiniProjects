@@ -9,7 +9,6 @@ class Counter {
         void incr();
         int getcount();
         Counter();
-        Counter(int size);
     private:
         int *arrPtr;
         int counter;
@@ -17,10 +16,6 @@ class Counter {
 
 Counter::Counter() { //single 
     counter = 0;
-}
-Counter::Counter(int size) {
-    arrPtr = new int[size]; 
-    arrPtr[0] = 0; //Different implimentation
 }
 void Counter::incr() {
     counter++;

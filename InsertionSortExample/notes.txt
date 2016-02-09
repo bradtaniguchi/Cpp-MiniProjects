@@ -1,0 +1,3 @@
+C++ implimentation of insertion sort.
+Also going to be designed like bubblesort, to compare their runtime capabilities
+
