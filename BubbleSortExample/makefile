@@ -1,2 +1,2 @@
-all: main.cpp
-	g++ main.cpp -o main.o
+all: main.cpp bubblesort.cpp headers.h
+	g++ main.cpp bubblesort.cpp -o main.o
