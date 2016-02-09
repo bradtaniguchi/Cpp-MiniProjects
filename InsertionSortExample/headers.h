@@ -1,4 +1,4 @@
 //Provides insertionsort to main.
 
-void bubblesort(int len, int* arr);
+void insertionsort(int len, int* arr);
 
