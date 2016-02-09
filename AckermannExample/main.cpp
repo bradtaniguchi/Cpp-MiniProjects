@@ -4,14 +4,14 @@
 #include <iostream>
 int ackermann(int m, int n) {
     if (m == 0) {
-        std::cout << "<";
+//        std::cout << "<";
         return n + 1;
     }
     if (n == 0) {
-        std::cout << ">" << "Func(" << m <<"-1,1";
+//        std::cout << ">" << "Func(" << m <<"-1,1";
         return ackermann(m-1,1);//EVIL
     }
-    std::cout << ">" << "Func(" << m <<"-1,Func("<< m << "," << n <<"-1))";
+//    std::cout << ">" << "Func(" << m <<"-1,Func("<< m << "," << n <<"-1))";
     return ackermann(m-1,ackermann(m,n-1)); //DR. EVIL level EVIL
 }
 int main() {
