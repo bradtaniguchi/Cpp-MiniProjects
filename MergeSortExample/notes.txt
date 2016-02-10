@@ -1,0 +1,5 @@
+This is more like true programming, as the first two sorting algorithms inplimented 
+were very basic and written in a minute or less. This one will require more work
+inside of the sorting source file. 
+
+

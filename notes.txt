@@ -13,3 +13,7 @@ Going to work on stack implimentation test.
 Make a FlipFlop experiment? I have an idea with arrays, FlipFlops to make
 a binary adder, be cool
 
+========
+Adding more sorting algorithms, I have an idea to run a certain one depending
+on the number of inputs, the "supersort" combines all the sorting algorithms 
+depending on  the size of the input. 
