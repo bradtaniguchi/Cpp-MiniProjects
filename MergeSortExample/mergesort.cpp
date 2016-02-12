@@ -13,13 +13,23 @@
 using namespace std; //cut down on spam
 vector<int> merge(vector<int> vector1 , vector<int> vector2) { 
     //returns int vector of the two added vectors
-    int arr[] = {1,2,3}; // normal array, TEST
-    //initialize vector with array
-    vector<int> myvec (arr, arr+sizeof(arr)/ sizeof(arr[0])); 
+    vector<int> myvec;
+    myvec.reserve(vector1.size() + vector2.size());
+    myvec.insert(myvec.end(), vector1.begin(), vector1.end());
+    myvec.insert(myvec.end(), vector2.begin(), vector2.end());
     return myvec;
 }
-vector<int> mergesort(vector<int> myvector) {
+vector<int> mergesort(vector<int> myvector, int left, int right) {
     //returns sorted vector
-    if (sizeof(myvector) < 0) return myvector; 
+
+    if (sizeof(myvector) == 1) return myvector; //1 item return
+    if (sizeof(myvector) == 2) return myvector; //TEST VALUE compare, swap! 
+    //sort first half of vector    
+    vector<int> leftvector;
+    vector<int> rightvector;
+    int middle; //index of the "middle of array"
+    leftvector = mergesort(myvector, left, right); // do half 
+    //rightvector = mergesort(myvector, left, right);// do other half
+
 }
 
