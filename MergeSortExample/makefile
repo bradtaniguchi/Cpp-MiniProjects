@@ -8,8 +8,12 @@ CC=g++
 #TO DO LIST FOR MAKE:
 all: app clean 
 
-app: main.cpp headers.h 
+app: main.cpp mergesort.o headers.h 
 	$(CC) main.cpp -o main.o
+
+mergesort.o : mergesort.cpp ../masterheaders.h
+	$(CC) -c mergesort.cpp -o mergesort.o
 
 clean: 
 	rm -f $(app)
+	rm mergesort.o

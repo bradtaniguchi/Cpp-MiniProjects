@@ -10,6 +10,8 @@
 */ 
 
 #include <vector> //save me vectors!
+#include "../masterheaders.h"
+
 using namespace std; //cut down on spam
 vector<int> merge(vector<int> vector1 , vector<int> vector2) { 
     //returns int vector of the two added vectors
