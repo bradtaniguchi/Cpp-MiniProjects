@@ -7,6 +7,7 @@
 * until you get 2 items, which are compared, and sorted
 * DEFINANTLY BETTER TO USE VECTORS this time around! 
 * currently building..
+* TOP DOWNIMPLEMENTATION
 */ 
 
 #include <vector> //save me vectors!
@@ -24,14 +25,14 @@ vector<int> merge(vector<int> vector1 , vector<int> vector2) {
 vector<int> mergesort(vector<int> myvector, int left, int right) {
     //returns sorted vector
 
-    if (sizeof(myvector) == 1) return myvector; //1 item return
-    if (sizeof(myvector) == 2) return myvector; //TEST VALUE compare, swap! 
-    //sort first half of vector    
-    vector<int> leftvector;
-    vector<int> rightvector;
-    int middle; //index of the "middle of array"
-    leftvector = mergesort(myvector, left, right); // do half 
-    //rightvector = mergesort(myvector, left, right);// do other half
+    if (sizeof(myvector) == 1) return myvector; //1 item return, as 1 item is sorted
+    //vector<int> leftvector;
+    //vector<int> rightvector;
+    for(vector<int>::iterator x = myvector.begin(); x != myvector.end(); ++x) { 
+        //iterate vector
+        //if myvector[x] is ODD {add x to left}
+        //else {add x to right}
+    }
 
 }
 
